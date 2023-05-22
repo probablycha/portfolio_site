@@ -1,0 +1,541 @@
+
+/* Assuming you have already loaded the Roboto font */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: f7f7f7;
+  }
+
+body {
+    font-family: "Cartograph CF", Arial, sans-serif;
+    font-weight: 400; /* Regular font weight */
+    font-size: 16px; /* Base font size */
+    letter-spacing: 0.01em; /* Base letter spacing */
+    background-color: #f7f7f7;
+    color: #141301;
+  }
+  
+  h1 {
+    font-weight: 300; /* Light font weight */
+    font-size: 96px; /* Extra large font size */
+    letter-spacing: -0.015em; /* Extra large letter spacing */
+    color: #141301;
+    font-family: "TT Hoves";
+  }
+  
+  h2 {
+    font-weight: 500; /* Medium font weight */
+    font-size: 60px; /* Large font size */
+    letter-spacing: -0.005em; /* Large letter spacing */
+    color: #141301;
+    font-family: "TT Hoves";
+  }
+  
+  h3 {
+    font-weight: 400; /* Regular font weight */
+    font-size: 48px; /* Medium font size */
+    letter-spacing: 0; /* Medium letter spacing */
+    color: #141301;
+    font-family: "TT Hoves";
+  }
+  
+  h4 {
+    font-weight: 400; /* Regular font weight */
+    font-size: 34px; /* Small font size */
+    letter-spacing: 0.0025em; /* Small letter spacing */
+    color: #141301;
+    font-family: "TT Hoves";
+  }
+  
+  h5 {
+    font-weight: 500; /* Medium font weight */
+    font-size: 24px; /* Extra small font size */
+    letter-spacing: 0; /* Extra small letter spacing */
+    color: #141301;
+    font-family: "TT Hoves";
+  }
+  
+  h6 {
+    font-weight: 500; /* Medium font weight */
+    font-size: 20px; /* Tiny font size */
+    letter-spacing: 0.005em; /* Tiny letter spacing */
+    color: #141301;
+    font-family: "TT Hoves";
+  }
+
+
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+    header {
+      width: 100vw;
+      background-color: #f7f7f7;
+      padding: 20px;
+      color: #f7f7f7;
+    }
+
+
+  
+    /* Top navigation styles */
+  
+    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    
+    .navigation {
+      list-style-type: none;
+      display: flex;
+    }
+    
+    .logo {
+      width: 30px; /* Adjust the width as needed */
+      height: auto; /* Maintain the aspect ratio of the GIF */
+      object-fit: contain; /* Fit the GIF within the specified width and maintain its aspect ratio */
+      animation: logoAnimation 2s infinite; /* Adjust the animation duration as needed */
+    }
+
+    .logoButton {
+        background-color: #f7f7f7;
+        border: none;
+        cursor: pointer;
+    }
+  
+    
+
+  
+  
+    .navButton {
+      font-family: "Roboto", Arial, sans-serif;
+      font-weight: 500; /* Medium font weight */
+      font-size: 14px; /* Button font size */
+      letter-spacing: 0.02em; /* Button letter spacing */
+      text-transform: uppercase; /* Uppercase button text */
+      padding: 12px 24px; /* Button padding */
+      border-radius: 4px; /* Button border radius */
+      border: none; /* Remove button border */
+      cursor: pointer; /* Show pointer cursor on hover */
+      margin-right: 10px;
+      background-color: #f7f7f7;
+      ;
+    }
+    
+    .navButton a {
+      color: #333
+      ;
+      text-decoration: none;
+    }
+  
+    .navButton:hover {
+      background-color: #e8f3f56f;; /* Button background color on hover */
+    }
+    
+.gif {
+  height: 40px;
+  background-color: #f7f7f7;
+  border: none;
+  margin-left: 0 8px;
+}
+
+.gif:hover {
+  height: 40px;
+  background-color: none;
+  border: none;
+  cursor: pointer;
+}
+
+.chaWrapper{
+  height: 300px; 
+  width: auto;
+  padding: 40px;
+  justify-content: center;
+}
+
+.goldCha{
+  height: 100%;
+  width: 100%;
+}
+    
+
+    /* Project section styles */
+    section#work {
+      padding: 50px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      background-color: #f7f7f7;
+    }
+
+
+    .projectButton {
+        position:relative;
+        cursor: pointer;
+        background-color: #f7f7f7;
+        border: none;
+        padding: 80px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 400px;
+        transition: background-color 0.3s ease-in, filter 0.3s ease-in;
+      }
+      
+      .projectButton:hover {
+        background-color: #e8f3f56f;
+        border: none;
+        transition: background-color 0.3s ease-out, filter 0.3s ease-out;
+      }
+      
+      .projectButton::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: f7f7f7;
+        font-size: 18px;
+        font-weight: bold;
+        opacity: 0;
+        z-index: 1;
+        transition: opacity 0.3s ease-in;
+      }
+      
+      .projectButton:hover::after {
+        opacity: 1;
+      }
+
+      .projectImage {
+        height: 200px;
+        width: auto;
+        margin: 0px 30%;
+      }
+    
+
+
+
+
+
+
+      .contact-button {
+        display: inline-block;
+        text-decoration: none;
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2)); /* Drop shadow effect */
+        transition: filter 0.3s ease;
+        margin-bottom: 40px;
+      }
+      
+      .contact-button:hover {
+        filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4)); /* Enhanced drop shadow effect on hover */
+        cursor: pointer;
+      }
+      
+
+
+  
+
+
+
+
+    
+
+    /* About section styles */
+  
+    section#about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%; /* Update max-width instead of width */
+      margin: 0 40px;
+      background-color: #f7f7f7;
+      border-radius: 16px;
+    }
+    
+    .headshot-wrapper {
+      overflow: hidden;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+    
+    .headshot-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Add object-fit property */
+    }
+
+  .aboutH2{
+    display: flex;
+    justify-content: center;
+  }
+
+    .aboutText {
+        display: flex;
+        justify-content: center; /* Horizontally center the content */
+        align-items: center; /* Vertically center the content */
+        margin-top: 40px;
+    }
+  
+    .aboutP {
+      width: 800px;
+      line-height: 1.5;
+    }
+
+
+
+
+
+
+
+    section#aboutMeHero {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      max-width: 200px;
+
+    }
+    
+
+    
+    .character-details {
+      width: 60%;
+    }
+    
+    .graph-container {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+
+
+
+
+
+
+      .aboutPhoto{
+        width: 200px;
+        height: auto;
+        margin-bottom: 20px;
+        border-radius: 50%;
+      }
+
+      .aboutContent {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+      } 
+
+
+
+
+
+
+
+
+.video-container {
+    width: 480px;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+  }
+
+
+.bar-one {
+  align-content: center;
+}
+
+
+
+
+
+
+  .bar-graph .year {
+    -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+    -moz-animation: fade-in-text 2.2s 0.1s forwards;
+    animation: fade-in-text 2.2s 0.1s forwards;
+    opacity: 0;
+  }
+  
+
+  
+  .bar-graph-horizontal > div {
+    float: left;
+    margin-bottom: 8px;
+    width: 80%;
+  }
+  
+  .bar-graph-horizontal .year {
+    float: left;
+    width: 50px;
+    margin-right: 20px;
+    height: 30px;
+  }
+
+  .year{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .bar-graph-horizontal .bar {
+    border-radius: 3px;
+    height: 30px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 0;
+  }
+  
+  .bar-graph-one .bar::after {
+    -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+    -moz-animation: fade-in-text 2.2s 0.1s forwards;
+    animation: fade-in-text 2.2s 0.1s forwards;
+    color: #fff;
+    content: attr(data-percentage);
+    font-weight: 700;
+    position: absolute;
+    right: 16px;
+    top: 17px;
+  }
+  
+  .bar-graph-one .bar-one .bar {
+    background-color: #FFD700;
+    -webkit-animation: show-bar-one 1.2s 0.1s forwards;
+    -moz-animation: show-bar-one 1.2s 0.1s forwards;
+    animation: show-bar-one 1.2s 0.1s forwards;
+  }
+  
+  .bar-graph-one .bar-two .bar {
+    background-color: #FFD700;
+    -webkit-animation: show-bar-two 1.2s 0.2s forwards;
+    -moz-animation: show-bar-two 1.2s 0.2s forwards;
+    animation: show-bar-two 1.2s 0.2s forwards;
+  }
+  
+  .bar-graph-one .bar-three .bar {
+    background-color: #FFD700;
+    -webkit-animation: show-bar-three 1.2s 0.3s forwards;
+    -moz-animation: show-bar-three 1.2s 0.3s forwards;
+    animation: show-bar-three 1.2s 0.3s forwards;
+  }
+  
+  
+  /* Bar Graph Horizontal Animations */
+  @-webkit-keyframes show-bar-one {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 70%;
+    }
+  }
+  
+  @-webkit-keyframes show-bar-two {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 55%;
+    }
+  }
+  
+  @-webkit-keyframes show-bar-three {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 74.7%;
+    }
+  }
+  
+  @-webkit-keyframes show-bar-four {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 85%;
+    }
+  }
+  
+  @-webkit-keyframes fade-in-text {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+
+
+
+
+  section#project1 {
+
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+  .projectDetails {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 2000px;
+  }
+
+
+
+  .catalisAnimation {
+    height: 80px;
+  }
+
+  .cha{
+    max-width: 400px;
+  }
+
+  .main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+
+
+
+  .catalisProject {
+    max-width: 500px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    margin: 8px 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out, box-shadow 0.2s ease-out;
+  }
+
+  .catalisProject:hover {
+    box-shadow: 8px 8px 0px 0px #00000090;
+    transition: background-color 0.2s ease-out, box-shadow 0.2s ease-out;
+  }
+
+  .horizontal {
+    display: flex;
+  }
